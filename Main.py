@@ -10,6 +10,7 @@ class Stack:
 
   def push(self, data) -> None:
     # Write your code here
+    head=Node
     temp=Node(data)
     head=temp
     temp.next=head
@@ -31,6 +32,7 @@ class Stack:
     It prints all the elements of stack.
     """
     # Write your code here
+    head=Node
     temp=head
     while temp!=None:
       temp=temp.next
