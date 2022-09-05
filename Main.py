@@ -11,12 +11,14 @@ class Stack:
   def push(self, data) -> None:
     # Write your code here
     temp=Node(data)
-    temp.next=head
     head=temp
+    temp.next=head
+    #head=temp
     
 
   def pop(self) -> None:
     # Write your code here
+    head=temp
     if head==None:
       return None
     else:
