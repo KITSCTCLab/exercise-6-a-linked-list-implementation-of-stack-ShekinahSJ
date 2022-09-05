@@ -12,8 +12,8 @@ class Stack:
     # Write your code here
     self.head=Node
     temp=Node(data)
-    self.head=self.temp
     temp.next=self.head
+    self.head=temp
     #head=temp
     
 
