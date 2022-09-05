@@ -19,7 +19,7 @@ class Stack:
 
   def pop(self) -> None:
     # Write your code here
-    head=temp
+    head=Node
     if head==None:
       return None
     else:
