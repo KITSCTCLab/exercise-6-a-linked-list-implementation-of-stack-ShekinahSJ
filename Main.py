@@ -10,17 +10,24 @@ class Stack:
 
   def push(self, data) -> None:
     # Write your code here
-    self.head=Node
+    '''self.head=Node
     temp=Node(data)
     temp.next=self.head
     self.head=temp
-    #head=temp
-    
+    #head=temp'''
+    new = Node(data)
+    temp = self.head
+    if temp is None:
+        self.head = new
+    else:
+        while temp.next is not None:
+            temp = temp.next
+            temp.next = new
 
   def pop(self) -> None:
     # Write your code here
-    self.head=Node
-    if self.head==None:
+    temp=self.head
+    if temp is None:
       return None
     else:
       temp=self.head
